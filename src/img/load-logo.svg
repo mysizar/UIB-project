@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
 
    <defs>
-    <style type="text/css">@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed');
-    </style>
-  </defs>
+      <style type="text/css">@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed');
+      </style>
+   </defs>
 
   <path id="rhombus" d="M 50 5 L 5 50 L 50 95 L 95 50 L 50 5 Z" stroke="cyan" stroke-linecap="square" stroke-width="4" fill="none" stroke-dasharray="255" stroke-dashoffset="0"/>
   
@@ -16,7 +16,7 @@
            values="255; 0"
            fill="freeze" />
    
-     <animate href="#text"
+  <animate href="#text"
            attributeName="font-size"
            dur="0.3s"
            begin="1.1s"
@@ -25,4 +25,3 @@
            fill="freeze" />
 
 </svg>
-
