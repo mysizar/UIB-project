@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is my UIB Portfolio Project" />
+    <link
+      rel="shortcut icon"
+      href="./src/img/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./src/css/index.style.css" />
+    <title>Ihor Fedkiv | UIB Portfolio</title>
+  </head>
+  <body>
+    <div id="loader" class="preloader">
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+      <object
+        class="svg-logo"
+        type="image/svg+xml"
+        data="./src/img/load-logo.svg"
+        aria-label="Preloader logo"
+      ></object>
+    </div>
+
+    <header>
+      <nav>
+        <div class="nav-container">
+          <div class="main-logo">
+            <a href="./index.html">
+              <object
+                type="image/svg+xml"
+                data="./src/img/main-logo.svg"
+                aria-label="Main logo"
+              ></object>
+            </a>
+          </div>
+          <ul class="nav-menu">
+            <li>
+              <img
+                id="blindness"
+                onclick="colorBlind()"
+                src="./src/img/color-blind/color-blind-enable.svg"
+                alt="icon enable color blindness modus"
+                title="Colorblind Mode"
+              />
+            </li>
+            <li><a href="#about" onclick="closeMenu()">About</a></li>
+            <li><a href="#projects" onclick="closeMenu()">Pet-Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+
+          <div class="nav-toggle">
+            <button
+              class="menu-btn"
+              onclick="openMenu()"
+              aria-label="mobile menu"
+            >
+              <svg width="48" height="48" viewBox="0 0 100 100">
+                <path
+                  class="line line1"
+                  d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+                />
+                <path class="line line2" d="M 20,50 H 80" />
+                <path
+                  class="line line3"
+                  d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="contact-icon">
+            <a
+              href="https://github.com/mysizar"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                src="./src/img/contact-icons/github-logo.svg"
+                alt="github icon"
+            /></a>
+            <a href="#" title="Work in Progress"
+              ><img
+                src="./src/img/contact-icons/linkedin.svg"
+                alt="linkedIn icon"
+            /></a>
+            <a href="#" title="Work in Progress"
+              ><img
+                src="./src/img/contact-icons/codepen-logo.svg"
+                alt="linkedIn icon"
+            /></a>
+            <a
+              href="mailto:ihor.fedkiv@dci.education?subject=Contact%20Request&body=Hi%21%20I%20would%20like%20to%20contact%20you."
+              ><img src="./src/img/contact-icons/email.svg" alt="email icon"
+            /></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="main-section">
+        <div class="hero-section">
+          <h1 id="h1" class="initial-animation">
+            <span>H</span>
+            <span>e</span>
+            <span>l</span>
+            <span>l</span>
+            <span>o</span>
+            <span>,</span>
+            <span class="break"></span>
+            <span>m</span>
+            <span>y</span>
+            <span>&nbsp;</span>
+            <span>n</span>
+            <span>a</span>
+            <span>m</span>
+            <span>e</span>
+            <span class="break-sm"></span>
+            <span>i</span>
+            <span>s</span>
+            <span>&nbsp;</span>
+            <span>I</span>
+            <span>h</span>
+            <span>o</span>
+            <span>r</span>
+          </h1>
+          <p>I'm a interactive Front-end and future Full Stack Developer</p>
+          <div class="hero-buttons">
+            <a href="#contact">Contact Me</a>
+          </div>
+          <a class="hero-bottom" href="#projects">My Works</a>
+        </div>
+
+        <div class="media-section">
+          <ul class="icon-list">
+            <li class="icon-item">
+              <a
+                class="icon-link"
+                href="https://github.com/mysizar"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="./src/img/media-icon/github-logo.svg"
+                  alt="linkedin icon"
+                />
+              </a>
+            </li>
+            <li class="icon-item">
+              <a class="icon-link" href="#" title="Work in Progress"
+                ><img
+                  src="./src/img/media-icon/linkedin.svg"
+                  alt="linkedin icon"
+              /></a>
+            </li>
+            <li class="icon-item">
+              <a class="icon-link" href="#" title="Work in Progress"
+                ><img
+                  src="./src/img/media-icon/codepen-logo.svg"
+                  alt="codepen icon"
+              /></a>
+            </li>
+            <li class="icon-item">
+              <a
+                href="mailto:ihor.fedkiv@dci.education?subject=Contact%20Request&body=Hi%21%20I%20would%20like%20to%20contact%20you."
+                class="icon-link"
+                ><img src="./src/img/media-icon/email.svg" alt="email icon"
+              /></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-area">
+          <ul class="squares">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- contact form  -->
+
+      <div id="contact" class="overlay">
+        <div id="contactBgr" class="contact-form">
+          <h3 id="formH3">
+            <span>C</span>
+            <span>o</span>
+            <span>n</span>
+            <span>t</span>
+            <span>a</span>
+            <span>c</span>
+            <span>t</span>
+            <span>&nbsp;</span>
+            <span>M</span>
+            <span>e</span>
+            <a href="#">&times;</a>
+          </h3>
+          <div id="formContainer" class="container-flex">
+            <div class="part-one">
+              <p>
+                Hey there! I'm Ihor, a creative web-developer and I'd love to
+                hear from you.
+              </p>
+              <p>
+                Whether you have a <a href="#" target="_blank">project</a> in
+                mind or just want to say hello, feel free to contact me now.
+                Let's create something awesome together!
+              </p>
+              <h4>
+                <span>M</span>
+                <span>y</span>
+                <span>&nbsp;</span>
+                <span>S</span>
+                <span>k</span>
+                <span>i</span>
+                <span>l</span>
+                <span>l</span>
+                <span>s</span>
+              </h4>
+              <div class="skills-icon">
+                <img
+                  src="./src/img/skills-ico/html5.svg"
+                  alt="html5-icon"
+                  title="HTML5"
+                />
+                <img
+                  src="./src/img/skills-ico/css3.svg"
+                  alt="css3-icon"
+                  title="CSS3"
+                />
+                <img
+                  src="./src/img/skills-ico/js.svg"
+                  alt="javascript-icon"
+                  title="JavaScript"
+                />
+                <img
+                  src="./src/img/skills-ico/bootstrap.svg"
+                  alt="bootstrap-icon"
+                  title="Bootstrap"
+                />
+                <img
+                  src="./src/img/skills-ico/sass.svg"
+                  alt="sass-icon"
+                  title="Syntactically Awesome Style Sheets"
+                />
+              </div>
+            </div>
+
+            <div class="part-two">
+              <form
+                method="post"
+                action="https://formspree.io/f/xvonlrvr"
+                id="contactForm"
+              >
+                <div class="input-group">
+                  <label for="name">Name *</label>
+                  <input
+                    id="name"
+                    type="text"
+                    name="name"
+                    onkeyup="success()"
+                    required
+                  />
+                </div>
+
+                <div class="input-group">
+                  <label for="email">Email *</label>
+                  <input
+                    id="email"
+                    type="email"
+                    name="email"
+                    onkeyup="success()"
+                    required
+                  />
+                </div>
+
+                <div class="input-group">
+                  <label for="message">Message *</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    onkeyup="success()"
+                    required
+                  ></textarea>
+                </div>
+
+                <button
+                  type="button"
+                  onclick="funcSubmit(), animateSending()"
+                  id="btnSubmit"
+                  disabled
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+          <div id="airplane" class="animation"></div>
+        </div>
+      </div>
+
+      <section class="projects-content">
+        <h2 id="projects">
+          <span>M</span>
+          <span>y</span>
+          <span>&nbsp;</span>
+          <span>P</span>
+          <span>r</span>
+          <span>o</span>
+          <span>j</span>
+          <span>e</span>
+          <span>c</span>
+          <span>t</span>
+          <span>s</span>
+        </h2>
+
+        <div class="projects-container">
+          <div class="projects one">
+            <div class="prj-preview"></div>
+            <div class="prj-overlay">
+              <h3>Flexbox Player</h3>
+              <p>
+                Flexbox Player is a responsive web-based music player designed
+                using the Flexbox layout method and Neuromorphic design.
+              </p>
+              <p>
+                Its modern design gives it a futuristic look, and its intuitive
+                interface makes it easy to use.
+              </p>
+              <p>
+                It includes standard music player features such as play, pause,
+                next, previous, and shuffle.
+              </p>
+              <div class="bottom-container">
+                <div class="tech-used">
+                  <img
+                    src="./src/img/skills-ico/html5.svg"
+                    alt="html5-icon"
+                    title="HTML5"
+                  />
+                  <img
+                    src="./src/img/skills-ico/css3.svg"
+                    alt="css3-icon"
+                    title="CSS3"
+                  />
+                  <img
+                    src="./src/img/skills-ico/js.svg"
+                    alt="javascript-icon"
+                    title="JavaScript"
+                  />
+                </div>
+                <a
+                  href="https://mysizar.github.io/FlexboxPlayer/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Take a look</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="projects two">
+            <div class="prj-preview"></div>
+            <div class="prj-overlay">
+              <h3>PWA Calculator</h3>
+              <p>
+                A Progressive Web App (PWA) Calculator is a web application that
+                can be installed on your device and used offline. It is built
+                using HTML, CSS and JavaScript.
+              </p>
+              <p>
+                The calculator can perform basic arithmetic operations such as
+                addition, subtraction, multiplication and division.
+              </p>
+              <p>
+                The calculator has a responsive design that adapts to different
+                screen sizes and orientations.
+              </p>
+              <div class="bottom-container">
+                <div class="tech-used">
+                  <img
+                    src="./src/img/skills-ico/html5.svg"
+                    alt="html5-icon"
+                    title="HTML5"
+                  />
+                  <img
+                    src="./src/img/skills-ico/css3.svg"
+                    alt="css3-icon"
+                    title="CSS3"
+                  />
+                  <img
+                    src="./src/img/skills-ico/js.svg"
+                    alt="javascript-icon"
+                    title="JavaScript"
+                  />
+                </div>
+                <a
+                  href="https://mysizar.github.io/PWA-Calculator/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Take a look</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="projects three">
+            <div class="prj-preview"></div>
+            <div class="prj-overlay">
+              <h3>4HANDY</h3>
+              <p>
+                A project "4handy" is a small Website-project for an imaginary
+                mobile provider built using HTML and CSS.
+              </p>
+              <p>
+                The site is fully responsive, has a user menu, navigation bar
+                and several interesting design solutions.
+              </p>
+              <p>
+                The purpose of creating the site was to master UI/UX skills and
+                also to acquire teamwork skills.
+              </p>
+              <div class="bottom-container">
+                <div class="tech-used">
+                  <img
+                    src="./src/img/skills-ico/html5.svg"
+                    alt="html5-icon"
+                    title="HTML5"
+                  />
+                  <img
+                    src="./src/img/skills-ico/css3.svg"
+                    alt="css3-icon"
+                    title="CSS3"
+                  />
+                </div>
+                <a
+                  href="https://raw.githack.com/CodeSwagsy/4handy/main/index.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Take a look</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-content">
+        <h2 id="about">
+          <span>A</span>
+          <span>b</span>
+          <span>o</span>
+          <span>u</span>
+          <span>t</span>
+          <span>&nbsp;</span>
+          <span>M</span>
+          <span>e</span>
+        </h2>
+
+        <div class="about-container">
+          <div class="grid-container">
+            <div class="grid-items gr-item1 gr-left">
+              <h3>2023 - 2024</h3>
+              <p>
+                I'm studying
+                <a
+                  href="https://digitalcareerinstitute.org/de/courses/web-development/"
+                  >Web Development</a
+                >
+                at
+                <a href="https://digitalcareerinstitute.org/"
+                  >Digital Career Institute</a
+                >
+                to master programming skills for building dynamic web
+                applications.
+              </p>
+              <p>
+                I will learn web technologies such as HTML, CSS, JS, React,
+                Angular, Node.js, SQL and gain experience in Git and agile
+                development.
+              </p>
+            </div>
+            <div class="grid-items gr-item2 gr-right">
+              <h3>2014 - 2022</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor.
+              </p>
+              <p>
+                Aenean massa. Cum sociis natoque penatibus et magnis dis
+                parturient montes, nascetur ridiculus mus. Donec quam felis,
+                ultricies nec, pellentesque eu, pretium quis.
+              </p>
+            </div>
+            <div class="grid-items gr-item3 gr-left">
+              <h3>2012 - 2013</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor.
+              </p>
+              <p>
+                Aenean massa. Cum sociis natoque penatibus et magnis dis
+                parturient montes, nascetur ridiculus mus. Donec quam felis,
+                ultricies nec, pellentesque eu, pretium quis.
+              </p>
+            </div>
+            <div class="grid-items gr-item4 gr-right">
+              <h3>2008 - 2012</h3>
+              <p>
+                Studied at
+                <a href="https://tntu.edu.ua/"
+                  >Ivan Puluj Technical University</a
+                >
+                and earned a bachelor's degree in computer science.
+              </p>
+              <p>
+                Studied information technologies, system administration and
+                computer systems, as well as algorithms and data structures,
+                gaining knowledge and experience.
+              </p>
+            </div>
+          </div>
+          <div class="gr-line"></div>
+        </div>
+      </section>
+    </main>
+    <div id="back" class="back-to-top">
+      <a href="#" title="Back to Top"
+        ><img src="./src/img/double-arrow-up.svg" alt="back to top button"
+      /></a>
+    </div>
+    <script src="./src/js/index.script.js"></script>
+    <footer>
+      <a
+        href="https://digitalcareerinstitute.org/de/courses/web-development/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >DCI Web Dev</a
+      >
+      <p>/ Final UIB Project / 2023</p>
+    </footer>
+  </body>
+</html>
