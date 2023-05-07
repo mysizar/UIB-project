@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@800&family=Rubik:wght@800&family=Work+Sans&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap");
-
 /* css reset  */
 
 * {
@@ -13,6 +11,7 @@
 }
 
 /* Variables */
+
 :root {
   --bgr: #071222;
   --oxford: #0d1b33;
@@ -84,7 +83,7 @@ small,
   font-size: 0.75rem;
 }
 
-/* loader section */
+/* -------------- loader section -------------- */
 
 .preloader {
   display: flex;
@@ -952,6 +951,14 @@ main {
 .part-two .input-group label {
   display: block;
   color: var(--snow);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s !important;
+  -webkit-text-fill-color: var(--lavender);
 }
 
 .part-two .input-group input,
