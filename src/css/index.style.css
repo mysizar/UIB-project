@@ -1118,7 +1118,7 @@ input:-webkit-autofill:active {
   }
 }
 
-@media only screen and (max-height: 750px) {
+@media only screen and (max-width: 480px) and (max-height: 750px) {
   .container-flex .part-one .skills-icon {
     margin-bottom: 1.25rem;
     display: none;
